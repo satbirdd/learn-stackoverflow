@@ -31,3 +31,46 @@ body {
 a {
   text-decoration: none;
 }
+
+$header-height: 34px;
+$header-width: 980px;
+$header-background-color: rgba(0,0,0,0.86);
+
+#header {
+  margin: 0;
+  height: $header-height;
+  position: static;
+  background-color: $header-background-color;
+  color: white;
+
+  .container {
+    margin: 0 auto;
+    width: $header-width;
+    height:$header-height;
+
+    .log {
+      line-height: $header-height;
+      font-size: 22px;
+    }
+
+    .user-infor {
+      position: absolute;
+      right: 300px;
+      top: 0;
+      a {
+        line-height: $header-height;
+        color: white;
+        padding: 0 10px;
+      }
+      span {
+        line-height: $header-height;
+      }
+    }
+  }
+
+}
+
+.content {
+  margin: 40px auto;
+  width: $header-width;
+}
