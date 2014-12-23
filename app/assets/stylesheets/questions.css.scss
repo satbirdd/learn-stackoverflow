@@ -4,10 +4,6 @@
 $interesting-background-color:  #ffefc6;
 
 .categories {
-  margin: 40px auto;
-  width: 980px;
-  position: static;
-
   span {
     background-color: #777;
     color: white;
@@ -19,4 +15,27 @@ $interesting-background-color:  #ffefc6;
     position: absolute;
     right: 230px;
   }
+}
+
+.center {
+  margin: 20px auto;
+  .questions {
+    li.question {
+      position: relative;
+      .visit-state {
+        display: inline-block;
+        ul>li {
+          height: 50px;
+          width: 50px;
+          display: inline-block;
+          span {
+            display: block;
+          }
+        }        
+      }
+      .infor {
+        display: inline-block;
+      }
+    }
+  } 
 }

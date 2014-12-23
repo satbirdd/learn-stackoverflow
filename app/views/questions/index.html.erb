@@ -9,6 +9,11 @@
 
 <div class='center'>
   <div class='questions' style='background-color: #ffefc6;'>
+    <ul class='questions'>
+      <% @questions.each do |question| %>
+        <%= render partial: "question", locals: {question: question} %>
+      <% end %>
+    </ul>
   </div>
   <div class='right-bar'>
   </div>
